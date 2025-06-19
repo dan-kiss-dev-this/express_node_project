@@ -8,6 +8,8 @@ const messagesController = require('./controllers/messages.controller')
 const app = express();
 
 const PORT = 3000
+// serve website with node from public folder
+app.use('/site', express.static('public'))
 
 app.use(express.json())
 
